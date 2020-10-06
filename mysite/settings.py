@@ -25,7 +25,7 @@ SECRET_KEY = "wzidpx^_7@f9wiq*h)-vv5$ncxs45#=*3r8z^8(@jm!z57_%)$"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1:8000/blog','blog2532000.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1/blog/','blog2532000.herokuapp.com']
 
 
 # Application definition
@@ -124,11 +124,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'assets')
-
-
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "np8454077273@gmail.com"
-EMAIL_HOST_PASSWORD = ""
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
